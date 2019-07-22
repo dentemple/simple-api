@@ -1,0 +1,23 @@
+{
+  "name": "api-simple",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple API for educational purposes",
+  "main": "server",
+  "scripts": {
+    "test": "jest -i"
+  },
+  "author": "Denny S. Temple <dev@dentemple.com> (https://dentemple.com)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2"
+  }
+}
