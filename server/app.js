@@ -11,6 +11,14 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use(cookieParser())
 
-app.get('/', (_, res) => res.send({ ping: 'ok', route: '/' }))
+app.get('*', (req, res) => {
+  const { url, headers } = req
+  return res.send({ ping: 'ok', route: '/', url })
+})
+
+app.post('*', (req, res) => {
+  const { body, url, headers } = req
+  return res.send({ ping: 'ok', route: '/', body, headers, url })
+})
 
 module.exports = app
