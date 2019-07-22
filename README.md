@@ -1,6 +1,6 @@
-# dens-express-boilerplate
+# Simple API
 
-Simple API server for testing purposes.
+> For testing purposes only
 
 ---
 
